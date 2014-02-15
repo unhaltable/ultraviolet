@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <color name="actionbar">#FF40BCBC</color>
+  <color name="actionbar">#FFC5403A</color>
   <color name="bg">#FFF0F0F1</color>
   <color name="transparent">#00000000</color>
   <color name="grey_pane">#FF333333</color>

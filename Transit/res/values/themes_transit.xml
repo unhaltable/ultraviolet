@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Generated with http://android-holo-colors.com -->
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <style name="Transit" parent="@style/_Transit"/>
+
+  <style name="_Transit" parent="android:Theme.Holo.Light">
+
+    <item name="android:editTextBackground">@drawable/transit_edit_text_holo_light</item>
+
+    <item name="android:textColorHighlight">#99c5403a</item>
+    <item name="android:textSelectHandleLeft">@drawable/transit_text_select_handle_left</item>
+    <item name="android:textSelectHandleRight">@drawable/transit_text_select_handle_right</item>
+    <item name="android:textSelectHandle">@drawable/transit_text_select_handle_middle</item>
+
+    <item name="android:listChoiceIndicatorMultiple">@drawable/transit_btn_check_holo_light</item>
+
+    <item name="android:listChoiceIndicatorSingle">@drawable/transit_btn_radio_holo_light</item>
+
+    <item name="android:buttonStyle">@style/ButtonTransit</item>
+
+    <item name="android:imageButtonStyle">@style/ImageButtonTransit</item>
+
+    <item name="android:dropDownSpinnerStyle">@style/SpinnerTransit</item>
+
+    <item name="android:buttonStyleToggle">@style/ToggleTransit</item>
+
+    <item name="android:listChoiceBackgroundIndicator">@drawable/transit_list_selector_holo_light</item>
+
+    <item name="android:activatedBackgroundIndicator">@drawable/transit_activated_background_holo_light</item>
+
+  </style>
+
+</resources>

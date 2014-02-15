@@ -2,4 +2,6 @@
 <resources>
   <string name="app_name">Transit</string>
   <string name="title_stop_detail">Stop Detail</string>
+  <string name="action_add">Add stop</string>
+  <string name="action_settings">Settings</string>
 </resources>
