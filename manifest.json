@@ -1,0 +1,16 @@
+{
+  "name": "Ultraviolet",
+  "short_name": "Ultraviolet",
+  "version": "1.2",
+  "default_locale": "en",
+  "description": "Keep your data safe with easy encryption.",
+  "manifest_version": 2,
+  "permissions": [ "fileSystem", "storage" ],
+  "options_page": "options/options.html",
+  "background": {
+    "scripts": [
+      "script.js"
+    ]
+  },
+  "icons": { "16": "img/icon16.png", "48": "img/icon48.png", "128": "img/icon128.png" }
+}
