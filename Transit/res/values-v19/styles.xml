@@ -1,0 +1,17 @@
+<resources>
+  <style name="AppBaseTheme" parent="android:Theme.Holo.Light">
+    <item name="android:windowTranslucentStatus">true</item>
+    <item name="android:actionBarStyle">@style/ActionBar</item>
+    <item name="android:actionOverflowButtonStyle">@style/Overflow</item>
+  </style>
+  <style name="ActionBar" parent="@android:style/Widget.Holo.Light.ActionBar.Solid">
+    <item name="android:titleTextStyle">@style/ActionBarText</item>
+    <item name="android:background">@color/transparent</item>
+  </style>
+  <style name="ActionBarText" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+    <item name="android:textColor">@android:color/white</item>
+  </style>
+  <style name="Overflow" parent="android:style/Widget.Holo.Light.ActionButton.Overflow">
+    <item name="android:src">@drawable/ic_action_overflow</item>
+  </style>
+</resources>
