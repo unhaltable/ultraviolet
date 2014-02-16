@@ -1,8 +1,8 @@
-@font-face { font-family: "Droid Sans"; src: url("../fonts/DroidSans.ttf"); }
+@font-face { font-family: "Roboto Light"; src: url("fonts/roboto-light.ttf"); }
+@font-face { font-family: "Roboto"; src: url("fonts/roboto-regular.ttf"); }
 
 *, *:before, *:after {
-  box-sizing: border-box;
-  font: 1em/1.2em "Droid Sans", Helvetica, "Segoe UI", Verdana, Arial, sans-serif;
+  font: 1em/1.2em "Roboto", Helvetica, "Segoe UI", Verdana, Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -14,8 +14,181 @@ html {
 
 body {
   background: #ededed;
-  height: 100%;;
+  height: 100%;
   text-align: center;
+  overflow: hidden;
   width: 100%;
 }
 
+#image, #darken {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+#image {
+  object-fit: cover;
+  -webkit-filter: blur(0);
+  transition: top 0.75s, -webkit-filter 3.5s;
+  /*-webkit-transform: translate3d(0,0,0);*/
+  -webkit-backface-visibility: hidden;
+}
+
+#darken {
+  background: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transition: opacity 0.3s linear;
+}
+
+#file, #text {
+  display: none;
+}
+
+#dropzone {
+  box-sizing: border-box;
+  border: 2px dashed #ededed;
+  color: #555;
+  height: 100%;
+}
+
+  #dropzone:hover {
+    border-color: #ba1af1;
+    color: #ba1af1;
+    cursor: pointer;
+  }
+
+  #tip, #name {
+    position: absolute;
+    left: 0;
+    width: 100%;
+  }
+
+  #tip {
+    font: 1.7em/1.85em "Roboto Light", Helvetica, "Segoe UI", Verdana, Arial, sans-serif;
+    margin-top: -0.85em;
+    top: 50%;
+  }
+
+  #name {
+    color: #777;
+    font: 1em/1.2em "Roboto", Helvetica, "Segoe UI", Verdana, Arial, sans-serif;
+    margin-top: -2.5em;
+    text-transform: uppercase;
+    top: 75%;
+  }
+
+    #name:before {
+      background: url(img/logo_mono.png) no-repeat;
+      content: ' ';
+      display: block;
+      height: 60px;
+      width: 60px;
+      margin: 10px auto;
+    }
+
+#text {
+  background: transparent;
+  border: 0;
+  box-sizing: border-box;
+  color: #fff;
+  text-shadow: 0 1px 1px #666;
+  font: 2em/2.05em "Roboto Light", Helvetica, "Segoe UI", Verdana, Arial, sans-serif;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 10px 40px 10px 10px;
+  outline: none;
+  width: 100%;
+  height: calc(100% - 90px);
+  resize: none;
+}
+
+  ::-webkit-input-placeholder {
+    color: #ccc;
+    text-shadow: 0 1px 1px #888;
+  }
+
+#menulist {
+  position: fixed;
+  z-index: 2;
+}
+
+  .menu {
+    background-size: 36px 36px;
+    border: 0;
+    display: block;
+    height: 36px;
+    width: 36px;
+    position: fixed;
+    right: 10px;
+    cursor: pointer;
+    outline: none;
+  }
+
+    #close {
+      background: url(img/close.png) no-repeat;
+      display: none;
+      top: 10px;
+    }
+
+    #save {
+      background: url(img/save.png) no-repeat;
+      display: none;
+      top: 50px;
+    }
+
+    #about {
+      background: url(img/about.png) no-repeat;
+      bottom: 10px;
+    }
+
+    .about_bg {
+      background-color: #9a9a9a !important;
+      border-radius: 4px;
+    }
+
+  @media all and (-webkit-min-device-pixel-ratio: 1.5) {
+    #close {
+      background: url(img/close@2x.png) no-repeat !important;
+      background-size: 36px 36px !important;
+    }
+
+    #save {
+      background: url(img/save@2x.png) no-repeat !important;
+      background-size: 36px 36px !important;
+    }
+  }
+
+#buttons {
+  background: rgba(186, 26, 241, 0.6);
+  position: fixed;
+  height: 90px;
+  bottom: -90px;
+  left: 0;
+  width: 100%;
+  transition: bottom 0.35s;
+  z-index: 2;
+}
+
+  .button {
+    /*background: #9e16cd;*/
+    background: transparent;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 1.2em;
+    padding: 19px 0;
+    margin: 15px;
+    width: 40%;
+    outline-color: #9e16cd !important;
+    transition: all 0.3s;
+  }
+
+    .button:hover {
+      background: #fff;
+      color: #9e16cd;
+      cursor: pointer;
+    }

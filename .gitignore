@@ -4,3 +4,7 @@
 *.jar
 *.war
 *.ear
+
+/ultraviolet-ios
+.dropbox
+manifest.mobile.json

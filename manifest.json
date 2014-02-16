@@ -1,15 +1,20 @@
 {
-  "name": "Ultraviolet",
-  "short_name": "Ultraviolet",
-  "version": "0.1",
-  "description": "Hide messages in images.",
-  "manifest_version": 2,
-  "permissions": [ "fileSystem", "storage" ],
-  // "options_page": "options/options.html",
-  "app": {
-    "background": {
-      "scripts": ["background.js"]
-    }
-  },
-  "icons": { "16": "img/icon16.png", /*"48": "img/icon48.png", */ "128": "img/icon128.png" }
+    "name": "Ultraviolet: Steganography for Chrome",
+    "short_name": "Ultraviolet",
+    "version": "0.9",
+    "description": "An intuitively light-weight and simple to use steganography app to hide and reveal secret messages within images.",
+    "manifest_version": 2,
+    "permissions": [
+        "fileSystem",
+        { "fileSystem": ["write"] },
+        "storage",
+        "app.window"
+    ],
+    "app": {
+        "background": {
+            "scripts": ["background.js"],
+            "persistant": false
+        }
+    },
+    "icons": { "16": "img/icon16.png", "48": "img/icon48.png",  "128": "img/icon128.png" }
 }

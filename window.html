@@ -1,22 +1,29 @@
 <!DOCTYPE html>
 <html>
-  <head>
-  </head>
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-  <title>ultraviolet</title>
+  <title>Ultraviolet</title>
+  <link rel="stylesheet" href="css/scrollbar.css">
   <link rel="stylesheet" href="window.css">
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script data-main="window" src="scripts/require.js"></script>
 </head>
 <body>
-  <canvas id="image"></canvas>
-  <div id="dropzone" title="Drag and drop a picture here, or click here to browse for a picture.">Drop a picture or click here</div>
-  <input id="text" type="text" tabindex="1" placeholder="Enter a message"></textarea>
+  <img id="image" />
+  <div id="darken"></div>
+  <input type="file" accept="image/*" id="file" />
+  <div id="dropzone" title="Drag and drop a picture here, or click here to browse for a picture.">
+    <span id="tip">Drop a picture or click to choose one</span>
+    <span id="name">Ultraviolet</span>
+  </div>
+  <textarea id="text" type="text" tabindex="1" placeholder="Enter a message to hide" autofocus></textarea>
   <section id="buttons">
-    <button class="button" id="buttons-hide" title="Hide your message in the picture" tabindex="2"></button>
-    <button class="button" id="buttons-show" title="Show the message from the picture" tabindex="3"></button>
+    <button class="button" id="buttons-hide" tabindex="2">Hide message</button>
   </section>
-  <script type="text/javascript" src="window.js"></script>
+  <div id="menulist">
+    <button class="menu" id="close"></button>
+    <button class="menu" id="save"></button>
+    <button class="menu about_bg" id="about"></button>
+  </div>
 </body>
 </html>

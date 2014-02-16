@@ -1,0 +1,160 @@
+@font-face { font-family: "Roboto Light"; src: url("../fonts/roboto-light.ttf"); }
+@font-face { font-family: "Roboto"; src: url("../fonts/roboto-regular.ttf"); }
+
+*, *:before, *:after {
+  font: 1em/1.2em "Roboto", Helvetica, "Segoe UI", Verdana, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+::selection {
+  background: #e29df9;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background: #ededed;
+  color: #191f21;
+  font: 0.95em/1.4em "Roboto";
+}
+
+h1 {
+  font-size: 1em;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 0.9em;
+}
+
+a {
+  border-bottom: 1px dotted #999;
+  color: #191f21;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+  a:hover {
+    border-color: #ba1af1;
+    color: #ba1af1;
+  }
+
+#content {
+  background: #ededed;
+  margin: 0 auto;
+  min-width: 420px;
+  width: 100%;
+}
+
+header {
+  background: #f6f6f6;
+  border-bottom: 1px solid #ba1af1;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+  #logo {
+    background: url(../img/icon48.png) no-repeat 0 10px;
+    color: #ba1af1;
+    font: 2em "Roboto Light";
+    padding: 15px 0 15px 58px;
+  }
+
+article, aside {
+  padding: 0 20px;
+}
+
+article {
+  border-bottom: 1px solid #ba1af1;
+  padding: 15px;
+}
+
+  #devs, #devs a {
+    border: 0;
+    color: #ba1af1;
+    text-align: center;
+  }
+
+  .dev {
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 0.9em;
+    padding: 25px 0;
+    transition: all 0.15s;
+    width: 24%;
+  }
+
+  .dev:hover {
+    background: #fff;
+  }
+
+  .dev img {
+    border-radius: 100%;
+    height: 80px;
+    margin-bottom: 15px;
+    width: 80px;
+  }
+
+  #dev1 {
+    -webkit-animation: fadeInUp 0.4s;
+  }
+
+  #dev2 {
+    -webkit-animation: fadeInUp 0.5s;
+  }
+
+  #dev3 {
+    -webkit-animation: fadeInUp 0.7s;
+  }
+
+  #dev4 {
+    -webkit-animation: fadeInUp 1s;
+  }
+
+aside {
+  border-bottom: 1px solid #ba1af1;
+  padding: 15px;
+  text-align: center;
+}
+
+  #bitcoin-address {
+    border: 0;
+    display: block;
+    font-family: Consolas, monospace;
+    margin-top: 10px;
+  }
+
+footer {
+  background: #ededed;
+  font-style: italic;
+  padding: 15px;
+  text-align: center;
+}
+
+  footer p {
+    font-size: 0.9em;
+    margin: 0 0 15px 0;
+  }
+
+  #pennapps {
+    background: url(../img/about-penn@2x.png) no-repeat;
+    background-size: 90px 180px;
+    border: 0;
+    display: block;
+    height: 90px;
+    margin: auto;
+    width: 90px;
+  }
+
+    #pennapps:hover {
+      background-position: 0 100%;
+    }
+
+@-webkit-keyframes fadeInUp {
+  0% { -webkit-transform: translateY(20px); opacity: 0; }
+  100% { -webkit-transform: translateY(0); opacity: 1; }
+}
