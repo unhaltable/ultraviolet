@@ -1,7 +1,7 @@
-ultraviolet
+Ultraviolet
 ===========
 
-http://www.cryptr.ca/uv/
+Check out the official website: http://www.cryptr.ca/uv/
 
 Hiding in plain sight.
 
