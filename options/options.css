@@ -29,6 +29,7 @@ h1 {
 
 p {
   font-size: 0.9em;
+  line-height: 1.2em;
 }
 
 a {
@@ -83,6 +84,7 @@ article {
     border-radius: 5px;
     display: inline-block;
     font-size: 0.9em;
+    margin: 10px 0;
     padding: 25px 0;
     transition: all 0.15s;
     width: 24%;

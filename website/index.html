@@ -6,6 +6,7 @@
   <title>Ultraviolet: can you see it?</title>
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" href="img/icon16.png">
+  <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/ultraviolet/leekpgnekboomflfohjgpebaldaneimi">
 </head>
 <body>
   <header>
@@ -13,7 +14,7 @@
       <div id="header-logo"></div>
       <h1>Ultraviolet</h1>
       <h2>Hiding in plain sight</h2>
-      <a href="https://chrome.google.com/webstore/detail/ultraviolet/leekpgnekboomflfohjgpebaldaneimi" class="header-btn">Get it now</a>
+      <a href="https://chrome.google.com/webstore/detail/ultraviolet/leekpgnekboomflfohjgpebaldaneimi" onclick="chrome.webstore.install(); return false;" id="install-button" class="header-btn">Get it now</a>
       <a class="header-btn" id="header-btn-more">Learn more</a>
     </div>
   </header>

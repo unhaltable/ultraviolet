@@ -161,10 +161,8 @@ require(['jquery', 'steganography', 'hotkeys', 'filereader', 'state-machine', 'u
                 $(this).css("z-index", 1);
 
                 // Remove the blur
-                $(this).css('-webkit-transition-duration', 0);
                 $(this).css("-webkit-filter", "blur(0)");
-                $(this).css('-webkit-transition-duration', "");
-
+                
                 // Transition the image down
                 $(this).css("top", 0).one("webkitTransitionEnd", function (e) {
                     resolve();
@@ -186,9 +184,7 @@ require(['jquery', 'steganography', 'hotkeys', 'filereader', 'state-machine', 'u
             var $image = $("#image");
             $image.css("top", -$image.height()).one("webkitTransitionEnd", function (e) {
                 // Add the blur
-                $(this).css('-webkit-transition-duration', 0);
                 $(this).css("-webkit-filter", "blur(5px)");
-                $(this).css('-webkit-transition-duration', "");
 
                 // Push the image backward
                 $(this).css("z-index", -2);
