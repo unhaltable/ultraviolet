@@ -16,7 +16,7 @@ require(['jquery', 'steganography', 'hotkeys', 'filereader', 'state-machine', 'u
             { name: 'load', from: 'dropzone', to: 'concealed' },
             { name: 'save',  from: ['revealed', 'concealed'], to: 'dropzone'},
             { name: 'close',  from: ['revealed', 'concealed'], to: 'dropzone'},
-            { name: 'conceal', from: 'revealed', to: 'concealed' },
+            { name: 'conceal', from: ['revealed', 'concealed'], to: 'concealed' },
             { name: 'reveal', from: 'concealed', to: 'revealed'}
         ],
         callbacks: {
@@ -53,11 +53,13 @@ require(['jquery', 'steganography', 'hotkeys', 'filereader', 'state-machine', 'u
                 animateCloseImage();
             },
             onconceal: function(event, from, to) {
-                var image = $("#image")[0];
-                image.src = steg.encode($("#text").val(), image, {
-                    width: image.naturalWidth,
-                    height: image.naturalHeight
-                });
+                if (from == 'revealed') {
+                    var image = $("#image")[0];
+                    image.src = steg.encode($("#text").val(), image, {
+                        width: image.naturalWidth,
+                        height: image.naturalHeight
+                    });
+                }
                 fsm.save();
 
                 // Unbind keyboard shortcut

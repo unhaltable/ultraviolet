@@ -8,7 +8,7 @@
 }
 
 body {
-  background: #ededed;
+  background: #311e34;
   height: 100%;
   text-align: center;
   width: 100%;
@@ -120,7 +120,12 @@ header {
 
 section {
   padding: 40px 0;
+  text-align: center;
 }
+
+  #section1 {
+    background: #ededed;
+  }
 
   #section2 {
     background: #dedede;
@@ -133,9 +138,23 @@ section {
   }
 
   #section-pic {
-    margin: 30px 0;
+    margin: 30px auto;
     max-width: 100%;
     width: 500px;
+  }
+
+  #slideshow {
+    margin: 30px auto;
+    height: 200px;
+    max-width: 100%;
+    width: 500px;
+  }
+
+  #slideshow img {
+    height: auto;
+    width: 100%;
+    left: 0;
+    top: 0;
   }
 
   #section-condition {
