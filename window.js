@@ -1,5 +1,6 @@
 require.config({
     baseUrl: 'scripts',
+    // Declare modules that depend on jQuery
     "shim": {
         "filereader": ["jquery"],
         "hotkeys": ["jquery"]
