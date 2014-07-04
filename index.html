@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta property="og:title" content="Ultraviolet: Steganography for Chrome" />
+  <meta property="og:image" content="http://cryptr.ca/uv/img/logo@2x.png"/>
+  <meta property="og:site_name" content="Ultraviolet">
+  <title>Ultraviolet: can you see it?</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="img/icon16.png">
+  <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/ultraviolet/leekpgnekboomflfohjgpebaldaneimi">
+</head>
+<body>
+  <header>
+    <div id="header-overlay">
+      <div id="header-logo"></div>
+      <h1>Ultraviolet</h1>
+      <h2>Hiding in plain sight</h2>
+      <a href="https://chrome.google.com/webstore/detail/ultraviolet/leekpgnekboomflfohjgpebaldaneimi" onclick="chrome.webstore.install(); return false;" id="install-button" class="header-btn">Get it now</a>
+      <a class="header-btn" id="header-btn-more">Learn more</a>
+    </div>
+  </header>
+  <section id="section1">
+    <h3>Be a professional ninja <span id="section-ast">*</span></h3>
+    <p>With <a href="http://en.wikipedia.org/wiki/Steganography">steganography</a>, you can hide messages inside pictures.</p>
+    <p>The following photo has a secret message in it.</p>
+    <p>Do you know what it is?</p>
+    <img src="img/steg.jpg" alt="A picture with a super secret message. Shh...!" id="section-pic" />
+    <p id="section-condition">*  Ninja outfit not included</p>
+  </section>
+  <section id="section2">
+    <h3>Truly beautiful</h3>
+    <p>It's the magic of steganography packaged into a single, stunning Chrome app.</p>
+    <section id="slideshow">
+      <img src="img/app1.png" alt="A screenshot of the beautiful Ultraviolet" />
+      <img src="img/app2.png" alt="A screenshot of the beautiful Ultraviolet" />
+      <img src="img/app3.png" alt="A screenshot of the beautiful Ultraviolet" />
+    </section>
+    <p>Simply choose an image file to reveal the secret message, or add your own.</p>
+  </section>
+  <footer>
+    <div id="footer-logo" title="Back to top"></div>
+    <div id="footer-copy">
+      Created with love by <a href="http://www.unhaltable.com/">Team Unhaltable</a> at <a href="http://2014s.pennapps.com/">PennApps Spring 2014</a>
+    </div>
+  </footer>
+  <script type="text/javascript" src="jquery.min.js"></script>
+  <script type="text/javascript" src="cycle.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
